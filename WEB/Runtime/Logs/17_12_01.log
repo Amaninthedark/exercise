@@ -1,0 +1,42 @@
+[ 2017-12-01T00:00:18+08:00 ] 192.168.43.209 /exercise/index.php/User/register?phone_data=17858100184&password_data=123456
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000806s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000850s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\www\exercise\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000562s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000591s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\www\exercise\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.011067s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\www\exercise\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `user` WHERE ( `phone`='17858100184' ) LIMIT 1   [ RunTime:0.000351s ]
+SQL: INSERT INTO `user` (`phone`,`nicename`,`password`,`time`) VALUES ('17858100184','中国移动','e10adc3949ba59abbe56e057f20f883e',1512057618) [ RunTime:0.042437s ]
+
+[ 2017-12-01T00:00:53+08:00 ] 192.168.43.209 /exercise/index.php/User/register?phone_data=17858100187&password_data=123456
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000558s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000615s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\www\exercise\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000634s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000664s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\www\exercise\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.011796s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\www\exercise\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `user` WHERE ( `phone`='17858100187' ) LIMIT 1   [ RunTime:0.000325s ]
+SQL: INSERT INTO `user` (`phone`,`nicename`,`password`,`time`) VALUES ('17858100187','中国移动','e10adc3949ba59abbe56e057f20f883e',1512057653) [ RunTime:0.051318s ]
+
+[ 2017-12-01T00:01:43+08:00 ] 192.168.43.209 /exercise/index.php/User/register?phone_data=19019001900&password_data=132
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000520s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000570s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\www\exercise\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000571s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000605s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\www\exercise\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.010236s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\www\exercise\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `user` WHERE ( `phone`='19019001900' ) LIMIT 1   [ RunTime:0.000315s ]
+SQL: INSERT INTO `user` (`phone`,`nicename`,`password`,`time`) VALUES ('19019001900','中国移动','65ded5353c5ee48d0b7d48c591b8f430',1512057703) [ RunTime:0.117069s ]
+
