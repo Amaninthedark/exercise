@@ -1,0 +1,18 @@
+[ 2017-12-06T00:15:42+08:00 ] 192.168.43.209 /exercise/index.php/User/register
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.010004s ]
+INFO: [ route_check ] --END-- [ RunTime:0.010072s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\www\exercise\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000543s ]
+NOTIC: [8] Undefined index: phone_data F:\www\exercise\WEB\Lib\Action\UserAction.class.php 第 22 行.
+NOTIC: [8] Undefined index: password_data F:\www\exercise\WEB\Lib\Action\UserAction.class.php 第 23 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\www\exercise\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.040122s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\www\exercise\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `user` WHERE ( `phone`='' ) LIMIT 1   [ RunTime:0.000317s ]
+SQL: INSERT INTO `user` (`phone`,`nicename`,`password`,`time`) VALUES (null,'中国移动','d41d8cd98f00b204e9800998ecf8427e',1512490542) [ RunTime:0.000137s ]
+ERR: 1048:Column 'phone' cannot be null
+ [ SQL语句 ] : INSERT INTO `user` (`phone`,`nicename`,`password`,`time`) VALUES (null,'中国移动','d41d8cd98f00b204e9800998ecf8427e',1512490542)
+
