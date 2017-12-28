@@ -3,18 +3,39 @@
 ini_set("display_errors", "on");
 
 require_once dirname(__DIR__) . '/api_sdk/vendor/autoload.php';
-
+require_once 'AipFace.php';
 use Aliyun\Core\Config;
 use Aliyun\Core\Profile\DefaultProfile;
 use Aliyun\Core\DefaultAcsClient;
 use Aliyun\Api\Sms\Request\V20170525\SendSmsRequest;
 use Aliyun\Api\Sms\Request\V20170525\QuerySendDetailsRequest;
 
+const APP_ID = '10599908';
+			const API_KEY = 'IPm1XFE6vQEAShWPI0p4q2Xp';
+			const SECRET_KEY = 'VEyvTxKoFpRWyGGtieZq3Et0UoY1gk77';
+
+			
 // 加载区域结点配置
 Config::load();
 
 	class UserAction extends Action{
 
+		public function Aip(){
+		$client = new AipFace(APP_ID, API_KEY, SECRET_KEY);
+				// 调用人脸检测
+
+				$image1=(string)($_GET['$image1_data']);
+			$image1=(string)($_GET['$image2_data']);
+				$image2='http://192.168.43.209/exercise/WEB/Public/img/head_1514485688397.jpg';
+				$images = array(
+			    file_get_contents($image1),
+			    file_get_contents($image2), 
+			);  
+ 
+				$array =$client->match($images);
+			 
+				echo json_encode($array) ;  
+		}
 
 		//注册
 		public function register(){
